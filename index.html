@@ -706,7 +706,7 @@ footer span { color: var(--cyan); }
     <div style="text-align:center; margin-top: 20px;">
       <a href="resume.pdf" class="download-btn" onclick="handleDownload(event)">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-        Download Full Resume PDF
+        Download Resume
       </a>
     </div>
   </div>
@@ -1108,11 +1108,6 @@ function handleSubmit(e) {
   }, 900);
 }
 
-/* ── DOWNLOAD BUTTON ── */
-function handleDownload(e) {
-  e.preventDefault();
-  alert('Resume PDF download: In a deployed version, this would download the actual resume PDF. Link it to your hosted PDF URL.');
-}
 
 /* ── STAGGER ACH CARDS ── */
 const achCards = document.querySelectorAll('.ach-card');
